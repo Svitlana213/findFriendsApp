@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-
+import '../methods/logout.dart';
 import '../values/colors.dart';
 
 class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   final String title;
-
   AppBarWidget({required this.title});
+
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
       leading: IconButton(
-        onPressed: (){
+        onPressed: () {
           Navigator.pop(context);
         },
         icon: Icon(Icons.arrow_back, color: white),
@@ -23,6 +23,14 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: true,
       backgroundColor: bg,
       toolbarHeight: 80,
+      actions: [
+        IconButton(
+          onPressed: () {
+            logout(context);
+          },
+          icon: Icon(Icons.logout, color: white),
+        ),
+      ],
     );
   }
 

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "416312225166",
+    "project_id": "findfriends-4ca64",
+    "storage_bucket": "findfriends-4ca64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416312225166:android:e0f798cd69171365fa88df",
+        "android_client_info": {
+          "package_name": "com.example.kaquizz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "416312225166-nmkblm5agdar54eg8dpl90m02urlo7nk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_4Oa7xnE4RzBeY3D4ltQ9mF0VoaJSSks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "416312225166-nmkblm5agdar54eg8dpl90m02urlo7nk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

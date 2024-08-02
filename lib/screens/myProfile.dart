@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:kaquizz/values/colors.dart';
@@ -6,6 +7,10 @@ import 'package:kaquizz/widgets/userCardWidget.dart';
 import '../widgets/appBarWidget.dart';
 
 class MyProfile extends StatelessWidget{
+  final User? user;
+
+  MyProfile({required this.user});
+
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -21,7 +26,7 @@ class MyProfile extends StatelessWidget{
               // mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  'My name',
+                  user!.displayName.toString(),
                   style: TextStyle(color: white, fontSize: 20, fontWeight: FontWeight.w600),
                 ),
                 Spacer(),
